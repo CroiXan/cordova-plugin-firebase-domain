@@ -34,8 +34,8 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:host="$APP_DOMAIN_NAME" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="http"/>
                 <data android:host="$APP_DOMAIN_NAME" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="https"/>
-		<data android:host="$APP_DOMAIN_NAME2" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="http"/>
-                <data android:host="$APP_DOMAIN_NAME2" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="https"/>
+		<data android:host="links.en.tel" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="http"/>
+                <data android:host="links.en.tel" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="https"/>
             </intent-filter>
     </config-file>
 
@@ -62,22 +62,18 @@
         <array>
             <string>http://$APP_DOMAIN_NAME$APP_DOMAIN_PATH</string>
             <string>https://$APP_DOMAIN_NAME$APP_DOMAIN_PATH</string>
-	    <string>http://$APP_DOMAIN_NAME2$APP_DOMAIN_PATH</string>
-            <string>https://$APP_DOMAIN_NAME2$APP_DOMAIN_PATH</string>
         </array>
     </config-file>
 
     <config-file target="*-Debug.plist" parent="com.apple.developer.associated-domains">
         <array>
             <string>applinks:$APP_DOMAIN_NAME</string>
-	    <string>applinks:$APP_DOMAIN_NAME2</string>
         </array>
     </config-file>
 
     <config-file target="*-Release.plist" parent="com.apple.developer.associated-domains">
         <array>
             <string>applinks:$APP_DOMAIN_NAME</string>
-	    <string>applinks:$APP_DOMAIN_NAME2</string>
         </array>
     </config-file>
 
