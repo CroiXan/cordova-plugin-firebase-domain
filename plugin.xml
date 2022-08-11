@@ -13,13 +13,11 @@
   </engines>
 
   <preference name="APP_DOMAIN_NAME" default="firebase_domain_url_prefix"/>
-  <preference name="APP_DOMAIN_NAME2" default="firebase_domain_url_prefix"/>
   <preference name="APP_DOMAIN_PATH" default="/" />
 
   <platform name="android">
 	<config-file parent="/*" target="res/xml/config.xml">
         <preference name="DOMAIN_URI_PREFIX" value="https://$APP_DOMAIN_NAME$APP_DOMAIN_PATH"/>
-	<preference name="DOMAIN_URI_PREFIX" value="https://$APP_DOMAIN_NAME2$APP_DOMAIN_PATH"/>
         <feature name="FirebaseDynamicLinks">
             <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseDynamicLinksPlugin" />
         </feature>
