@@ -34,8 +34,6 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:host="$APP_DOMAIN_NAME" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="http"/>
                 <data android:host="$APP_DOMAIN_NAME" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="https"/>
-		<data android:host="links.en.tel" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="http"/>
-                <data android:host="links.en.tel" android:pathPrefix="$APP_DOMAIN_PATH" android:scheme="https"/>
             </intent-filter>
     </config-file>
 
